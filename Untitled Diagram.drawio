@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-26T15:56:10.026Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="K7jZoLmEBn6dIb_Yf5Vf" version="20.2.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-26T16:08:06.137Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="E6dDjhYE8Zh1bxzES1qk" version="20.2.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1185" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2031" dy="1123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -158,9 +158,6 @@
         <mxCell id="Q5633aPb97GIbdR3z-Nm-46" value="HR Acknowledgement" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="601" y="650" width="140" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Q5633aPb97GIbdR3z-Nm-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Q5633aPb97GIbdR3z-Nm-48" target="Q5633aPb97GIbdR3z-Nm-42">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="Q5633aPb97GIbdR3z-Nm-48" value="Leave Rejected" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="421" y="660" width="120" height="60" as="geometry" />
         </mxCell>
@@ -209,6 +206,9 @@
         <mxCell id="Q5633aPb97GIbdR3z-Nm-59" value="Leave Accepted" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="51" y="770" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="Q5633aPb97GIbdR3z-Nm-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Q5633aPb97GIbdR3z-Nm-61" target="Q5633aPb97GIbdR3z-Nm-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Q5633aPb97GIbdR3z-Nm-61" value="Leave Rules" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="51" y="900" width="120" height="60" as="geometry" />
         </mxCell>
@@ -217,6 +217,9 @@
         </mxCell>
         <mxCell id="Q5633aPb97GIbdR3z-Nm-65" value="2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="372" y="64" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q5633aPb97GIbdR3z-Nm-66" value="Holidays Tab" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="231" y="900" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
