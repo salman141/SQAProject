@@ -1,0 +1,318 @@
+Q1
+
+package lab1;
+
+import java.util.Scanner;
+
+public class Q1 {
+
+	public static void main(String[] args) {
+		
+		Scanner myObj = new Scanner(System.in);
+	    System.out.println("Enter username");
+
+	    String userName = myObj.nextLine();
+	    System.out.println("Username is: " + userName);
+	    
+	    String[] arr = userName.split(" ");
+	    
+	    
+	    System.out.print(arr[0].charAt(0) + "." + arr[1].charAt(0) + ". " + arr[2]);
+	    
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q2
+
+
+
+package lab1;
+
+import java.util.Scanner;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+		Scanner myObj = new Scanner(System.in);
+	    System.out.println("Enter Alphabets: ");
+
+	    String inputString = myObj.nextLine();
+	    
+	    PrintAlphabetOccurrences(inputString);
+	    
+	}
+	
+	public static void PrintAlphabetOccurrences(String inputString) {
+		int maximumOccurrence = 0;
+		char maximumOccurredAlphabet = '~';
+		String alreadyEntertained = "";
+		int inputStringLength = inputString.length();
+		
+		for(int i=0;i<inputStringLength;i++) {
+			int occurrences = 0;
+			
+			if(alreadyEntertained.contains("" + inputString.charAt(i))) {
+				continue;
+			}
+			alreadyEntertained = alreadyEntertained + inputString.charAt(i);
+			
+			for(int j=0;j<inputStringLength;j++) {
+				if(inputString.charAt(i) == inputString.charAt(j)) {
+					occurrences++;
+				}
+			}
+			
+			if(occurrences > 0) {
+				System.out.println(inputString.charAt(i) + " occurred " + occurrences + " times");
+				
+				if(maximumOccurrence < occurrences) {
+					maximumOccurredAlphabet = inputString.charAt(i);
+					maximumOccurrence = occurrences;
+				}
+			}
+		}
+		
+		System.out.println();
+		System.out.println(maximumOccurredAlphabet + " occurred maximum times.");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q3
+
+
+package lab1;
+
+import java.util.Scanner;
+
+public class Q3 {
+
+	public static void main(String[] args) {
+		String input = "forgeeksskeegfor";
+		
+		Scanner myObj = new Scanner(System.in);
+	    System.out.println("Input string: ");
+
+	    String inputString = myObj.nextLine();
+	    
+	    String palindrome = "";
+		
+	    palindrome = getPalindrome(inputString);
+		
+		if(palindrome.length() > 1) {
+			System.out.println("Palindrome is '" + palindrome + "'");
+		}
+		else {
+			System.out.println("Palindrome does not exist.");
+		}
+	}
+	
+	public static String getPalindrome(String inputString) {
+		double length = inputString.length();
+		int isEvenLength = (int)Math.ceil(length) % 2;
+		
+		int midIndex = inputString.length()/2;
+		
+		String palindrome = "";
+		if(isEvenLength == 1) {
+			palindrome = inputString.charAt(midIndex) + "";
+		}
+		
+		for(int i = 0; i < midIndex; i++ ) {
+			char a = inputString.charAt(midIndex - i - 1);
+			char b = inputString.charAt(midIndex + i + isEvenLength);
+			
+			if(a == b) {
+				palindrome = a + palindrome + b;
+			}
+			else {
+				break;
+			}
+		}
+		
+		return palindrome;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q4
+
+package lab1;
+
+import java.util.Scanner;
+
+public class Q4 {
+	public static int GetCharacterOccurrence(String inputString, char c)
+	{
+		int numberOfOccurrences = 0;
+		
+		
+		
+		for(int i=0;i<inputString.length();i++)
+		{
+			if(inputString.charAt(i) == c)
+			{
+				numberOfOccurrences++;
+			}
+		}
+		
+		return numberOfOccurrences;
+	}
+	
+	public static void main(String[] args)
+	{
+		Scanner myObj = new Scanner(System.in);
+	    System.out.println("Enter String");
+
+	    String inputString = myObj.nextLine();
+	    
+	    
+	    for(int i=0;i<inputString.length();i++)
+	    {
+	    	int numberOfOccurrences = GetCharacterOccurrence(inputString, inputString.charAt(i));
+	    	if(numberOfOccurrences == 1)
+	    	{
+	    		System.out.println("First non-repeating element of string is: " + inputString.charAt(i));
+	    		break;
+	    	}
+	    }
+	    
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q6
+
+package lab1;
+
+import java.util.Scanner;
+
+public class Q5 {
+	public static int GetCharacterOccurrence(String inputString, char c)
+	{
+		int numberOfOccurrences = 0;
+		
+		
+		
+		for(int i=0;i<inputString.length();i++)
+		{
+			if(inputString.charAt(i) == c)
+			{
+				numberOfOccurrences++;
+			}
+		}
+		
+		return numberOfOccurrences;
+	}
+	
+	public static void main(String[] args)
+	{
+		Scanner myObj = new Scanner(System.in);
+	    System.out.println("Enter String");
+
+	    String inputString = myObj.nextLine();
+	    String outputString = "";
+	    for(int i=0;i<inputString.length();i++)
+	    {
+	    	int numberOfOccurrences = GetCharacterOccurrence(inputString, inputString.charAt(i));
+	    	if(numberOfOccurrences == 1)
+	    	{
+	    		outputString = outputString + inputString.charAt(i);
+	    	}
+	    }
+	    
+	    System.out.println("Output is " + outputString);
+	}
+}
+
+
