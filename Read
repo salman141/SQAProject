@@ -1,1 +1,12 @@
 
+    SELECT 
+        ROW_NUMBER() OVER (ORDER BY Student_Name) Registration_Num,
+		ROW_NUMBER() OVER (ORDER BY Student_Discipline) Discipline_Roll, 
+		RANK () OVER (ORDER BY Student_Score ) Uni_Position,
+		ROW_NUMBER() OVER (ORDER BY Student_Discipline) Discipline_Position,
+		ROW_NUMBER() OVER (ORDER BY Student_Score) Uni_Position_Unique,
+        Student_Name, 
+        Student_Discipline, 
+        Student_Score
+    FROM
+        dbo.StudentScore
